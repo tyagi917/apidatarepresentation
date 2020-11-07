@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React ,{Component} from 'react'
+import List from './list.js'
+import  ChartsPage from './piechart.js'
+import Form from './form.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+      <div className="p">
+      <div className="pie">
+      < ChartsPage/>
+      </div>
+      <div>
+      <div className="c">
+      <h1>23%</h1>
+      </div>
+      <div className="form">
+      
+      <Form/>
+       </div>
+       </div>
+      </div>
+
+      
+    
+      
+      <List/>
+
+      </div>
+      );
+  }
 }
+
 
 export default App;
